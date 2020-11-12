@@ -17,10 +17,6 @@ header {
     background-color: white;
 }
 
-.logo {
-    height: 50px;    
-    width: 50px;    
-}
 /* inicio menu hamburguesa */
 
 a{
@@ -54,6 +50,7 @@ nav {
 .burger {
     position: absolute;
     right: 0;
+    
 }
 
 input{
