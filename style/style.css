@@ -59,7 +59,7 @@ nav {
 input{
     display: inline-block;    
     position: absolute;    
-    top: 30px;    
+    top: 15px;    
     right: 17px;   
     opacity: 0;
 }
