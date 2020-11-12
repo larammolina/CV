@@ -1,0 +1,363 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Nanum Gothic', sans-serif;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+header {
+    background-color: white;
+}
+
+.logo {
+    height: 50px;    
+    width: 50px;    
+}
+/* inicio menu hamburguesa */
+
+a{
+    text-decoration: none;
+    color: white;
+}
+  
+li {
+    list-style: none;
+    font-size: 16px;
+    margin: 8px;
+}
+  
+nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.nav_wrapper {
+    padding: 1em 0;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+  
+.burger, .cruz {
+    margin: 0 1em;
+}
+
+.burger {
+    position: absolute;
+    right: 0;
+}
+
+input{
+    display: inline-block;    
+    position: absolute;    
+    top: 30px;    
+    right: 17px;   
+    opacity: 0;
+}
+
+.cruz{
+    display: none;
+}
+
+#toggle:checked + .drop-menu {
+    display: flex;
+    height: 224px;
+
+}
+
+.drop-menu {
+    background: #ff7868;
+    color: white;
+    display: none;
+    flex-direction: column;
+    position: relative;
+    opacity: 50;
+}
+
+.drop-menu li {
+    padding: .5em;
+}
+
+/* fin de menu hamburguesa */
+
+.portada {
+    height: auto;
+    width: auto;
+    padding: 15px;
+    margin: 25px;
+}
+
+.portada h1 {
+    font-size: 40px;
+    color: #ff3644;
+    margin-top: 20px;
+    
+}
+
+.portada h2 {
+    font-size: 30px;
+    color: #6334f4;
+    margin-bottom: 15px;
+    margin-top: 10px;
+    font-family: 'Roboto Mono', monospace;
+}
+
+.acercaDeMi h2, .acercaDeMi h3, .acercaDeMi a, .proyectos h2, .proyectos h3, .proyectos a{
+    margin: 15px;
+}
+
+.acercaDeMi img{
+    margin: 10px;
+    display: block;
+    width: 100%;
+}
+
+.acercaDeMi .contenido {
+    margin: 15px;
+    font-family: 'Roboto Mono', monospace;
+}
+
+.proyectos {
+    padding: 5px;
+    margin: 10px;
+}
+
+.proyectos img{
+    width: 100%;
+    margin: 20px;
+}
+
+.proyectos .contenido{
+    margin: 10px;
+    font-family: 'Roboto Mono', monospace;
+}
+
+.acercaDeMi .boton, .proyectos .boton {
+    font-size: 20px;
+    width: 40px;
+    height: 10px;
+    padding: 10px;
+    margin: 25px;
+    background-color:#ffc25b;
+}
+
+.titulos {
+    margin: 30px;
+    color: #ff3644;
+}
+
+.contacto{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 10px;
+}
+
+.contacto .presentacion {
+    text-align: center;
+    font-size: 15px;
+    font-family: 'Nanum Gothic', sans-serif;
+    margin:10px;
+}
+
+footer{
+    background-color: #ffc25b;
+    color: white;
+    height: auto;
+    padding: 15px;
+    font-size: 20px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+h5{
+    margin: 15px;
+    font-size: 15px;
+    text-align: center;
+}
+
+.emoticones{
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    text-align: center;
+}
+
+i{
+    padding: 10px;
+    margin: 10px;
+    color: black;
+    height: 15px;
+    width: 15px;
+}
+
+i:active{
+    color: white;
+}
+
+
+@media screen and (min-width: 1080px) and (max-width: 1920px) {
+
+    header {
+        background: #ffc25b;
+        height: 80px;
+        color: white;
+    }
+
+    .logo{
+        height: 55px;    
+        width: 55px;    
+        margin-left: 26px;
+    }
+
+    /*menu */
+
+      li, a {
+        color: white;
+        background-color: #ffc25b;
+        }
+    
+        li:hover, a:hover {
+            color: #6334f4;
+            text-decoration: underline;
+            text-decoration-color: #ff3644;
+        }
+    
+        li:active, a:active {
+            color: white
+            text-decoration: underline;
+        }
+    
+        .drop-menu{
+            font-size: 16px;
+            background-color:#ffc25b;
+            list-style: none;
+            padding: 0px 28px;
+            display: flex;
+        }
+    
+        nav, .drop-menu{
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        
+        nav {
+            align-items: center;
+        }
+        
+        .burger {
+            display: none;
+        }
+    
+    /*fin del menu */
+    
+    .portada {
+        height: auto;
+        width: auto;
+        padding: 15px;
+        margin: 25px;
+    }
+    
+    .portada h1 {
+        font-size: 45px;
+        color: #ff3644;
+        margin-top: 20px;
+    }
+    
+    .portada h2 {
+        font-size: 38px;
+        color: #6334f4;
+        margin-bottom: 15px;
+        margin-top: 10px;
+    }
+
+    .acercaDeMi img{
+        margin: 30px;
+        display: block;
+        width: 100%;
+    }
+
+    .acercaDeMi .contenido {
+        margin: 40px;
+    }
+
+    .contenido h2{
+        font-size: 35px;
+        text-align: right;
+        font-family: 'Roboto Mono', monospace;
+    }
+    .contenido h3{
+        font-size: 15px;
+        text-align: right;
+        font-family: 'Roboto Mono', monospace;
+    }
+
+    .acercaDeMi .boton, .proyectos .boton {    
+        text-align: right;
+        font-family: 'Roboto Mono', monospace;
+        width: auto;
+        margin: 50px;
+    }
+
+    h1 .titulos{
+        margin: 20px;
+        padding: 10px;
+
+    }
+
+    .acercaDeMi{
+        display: grid; 
+        grid-template-columns: 500px 900px;
+        grid-template-rows: 500px 100px;
+    }
+
+    .proyectos{
+        display: grid; 
+        grid-template-columns: 900px 500px;
+        grid-template-rows: 400px;
+    }
+
+    .contacto .presentacion {
+        text-align: center;
+        font-size: 20px;
+        font-family: 'Nanum Gothic', sans-serif;
+        margin:15px;
+    }
+
+    footer{
+        margin: 50px;
+        position: relative;
+        display: flex;
+        justify-content: space-around;
+        flex-direction: row;
+        width: 100%;
+    }
+    
+    footer h5{
+        font-size: 16px;
+        text-align: left;
+    }
+    
+    footer .emoticones i{
+        width: 18px;
+        height: 28px;
+        margin-left: 40px;
+        color: white;
+    }
+
+}
